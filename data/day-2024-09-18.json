@@ -1,0 +1,862 @@
+{
+  "tool": "pr-fanout/0.1.0",
+  "date": "2024-09-18",
+  "hours_requested": 12,
+  "hours_collected": 12,
+  "all_hours_full_schema": true,
+  "summary": {
+    "label": "2024-09",
+    "threshold_repos": 3,
+    "human_prs_opened": 70132,
+    "bot_prs_opened": 31055,
+    "agent_prs_opened": 10,
+    "pct_prs_by_agents": 0.01,
+    "pct_prs_by_bots": 30.69,
+    "human_actors": 43880,
+    "fanout_actors": 972,
+    "pct_human_prs_from_fanout": 13.13,
+    "pct_actors_fanout": 2.22
+  },
+  "threshold_sweep": [
+    {
+      "label": "2024-09",
+      "threshold_repos": 2,
+      "human_prs_opened": 70132,
+      "bot_prs_opened": 31055,
+      "agent_prs_opened": 10,
+      "pct_prs_by_agents": 0.01,
+      "pct_prs_by_bots": 30.69,
+      "human_actors": 43880,
+      "fanout_actors": 3821,
+      "pct_human_prs_from_fanout": 24.53,
+      "pct_actors_fanout": 8.71
+    },
+    {
+      "label": "2024-09",
+      "threshold_repos": 3,
+      "human_prs_opened": 70132,
+      "bot_prs_opened": 31055,
+      "agent_prs_opened": 10,
+      "pct_prs_by_agents": 0.01,
+      "pct_prs_by_bots": 30.69,
+      "human_actors": 43880,
+      "fanout_actors": 972,
+      "pct_human_prs_from_fanout": 13.13,
+      "pct_actors_fanout": 2.22
+    },
+    {
+      "label": "2024-09",
+      "threshold_repos": 4,
+      "human_prs_opened": 70132,
+      "bot_prs_opened": 31055,
+      "agent_prs_opened": 10,
+      "pct_prs_by_agents": 0.01,
+      "pct_prs_by_bots": 30.69,
+      "human_actors": 43880,
+      "fanout_actors": 443,
+      "pct_human_prs_from_fanout": 9.66,
+      "pct_actors_fanout": 1.01
+    },
+    {
+      "label": "2024-09",
+      "threshold_repos": 5,
+      "human_prs_opened": 70132,
+      "bot_prs_opened": 31055,
+      "agent_prs_opened": 10,
+      "pct_prs_by_agents": 0.01,
+      "pct_prs_by_bots": 30.69,
+      "human_actors": 43880,
+      "fanout_actors": 254,
+      "pct_human_prs_from_fanout": 5.98,
+      "pct_actors_fanout": 0.58
+    },
+    {
+      "label": "2024-09",
+      "threshold_repos": 10,
+      "human_prs_opened": 70132,
+      "bot_prs_opened": 31055,
+      "agent_prs_opened": 10,
+      "pct_prs_by_agents": 0.01,
+      "pct_prs_by_bots": 30.69,
+      "human_actors": 43880,
+      "fanout_actors": 64,
+      "pct_human_prs_from_fanout": 3.43,
+      "pct_actors_fanout": 0.15
+    }
+  ],
+  "association": {
+    "outside_prs_closed": 46267,
+    "outside_merge_rate": 70.46,
+    "inside_prs_closed": 36815,
+    "inside_merge_rate": 83.02
+  },
+  "repos_per_actor_histogram": {
+    "1": 40059,
+    "2": 2849,
+    "3": 529,
+    "4": 189,
+    "5": 88,
+    "6": 48,
+    "7": 26,
+    "8": 19,
+    "9": 9,
+    "50+": 4,
+    "10-19": 48,
+    "20-49": 12
+  },
+  "top_agent_logins": [
+    {
+      "login": "devin-ai-integration[bot]",
+      "prs_opened": 10
+    }
+  ],
+  "top_bot_logins": [
+    {
+      "login": "dependabot[bot]",
+      "prs_opened": 17514,
+      "pct_of_bot_prs": 56.4
+    },
+    {
+      "login": "renovate[bot]",
+      "prs_opened": 4561,
+      "pct_of_bot_prs": 14.69
+    },
+    {
+      "login": "pull[bot]",
+      "prs_opened": 2759,
+      "pct_of_bot_prs": 8.88
+    },
+    {
+      "login": "github-actions[bot]",
+      "prs_opened": 1391,
+      "pct_of_bot_prs": 4.48
+    },
+    {
+      "login": "red-hat-konflux[bot]",
+      "prs_opened": 269,
+      "pct_of_bot_prs": 0.87
+    },
+    {
+      "login": "swa-runner-app[bot]",
+      "prs_opened": 248,
+      "pct_of_bot_prs": 0.8
+    },
+    {
+      "login": "staging-whitesource-for-github-com[bot]",
+      "prs_opened": 232,
+      "pct_of_bot_prs": 0.75
+    },
+    {
+      "login": "pyup-bot",
+      "prs_opened": 232,
+      "pct_of_bot_prs": 0.75
+    },
+    {
+      "login": "github-classroom[bot]",
+      "prs_opened": 229,
+      "pct_of_bot_prs": 0.74
+    },
+    {
+      "login": "rhtap-qe-app[bot]",
+      "prs_opened": 227,
+      "pct_of_bot_prs": 0.73
+    },
+    {
+      "login": "optimus-primal[bot]",
+      "prs_opened": 180,
+      "pct_of_bot_prs": 0.58
+    },
+    {
+      "login": "gh-actions-test-bot",
+      "prs_opened": 140,
+      "pct_of_bot_prs": 0.45
+    },
+    {
+      "login": "copybara-service[bot]",
+      "prs_opened": 133,
+      "pct_of_bot_prs": 0.43
+    },
+    {
+      "login": "octo-sts[bot]",
+      "prs_opened": 123,
+      "pct_of_bot_prs": 0.4
+    },
+    {
+      "login": "regro-cf-autotick-bot",
+      "prs_opened": 111,
+      "pct_of_bot_prs": 0.36
+    },
+    {
+      "login": "konflux-staging[bot]",
+      "prs_opened": 107,
+      "pct_of_bot_prs": 0.34
+    },
+    {
+      "login": "rangobot-cli[bot]",
+      "prs_opened": 100,
+      "pct_of_bot_prs": 0.32
+    },
+    {
+      "login": "minder-smoke-tests-infra[bot]",
+      "prs_opened": 94,
+      "pct_of_bot_prs": 0.3
+    },
+    {
+      "login": "konflux-perf-scale-ci-pac-app[bot]",
+      "prs_opened": 93,
+      "pct_of_bot_prs": 0.3
+    },
+    {
+      "login": "minder-staging[bot]",
+      "prs_opened": 88,
+      "pct_of_bot_prs": 0.28
+    },
+    {
+      "login": "mergify[bot]",
+      "prs_opened": 87,
+      "pct_of_bot_prs": 0.28
+    },
+    {
+      "login": "snyk-io[bot]",
+      "prs_opened": 74,
+      "pct_of_bot_prs": 0.24
+    },
+    {
+      "login": "security-alliance-bot",
+      "prs_opened": 71,
+      "pct_of_bot_prs": 0.23
+    },
+    {
+      "login": "stainless-app[bot]",
+      "prs_opened": 67,
+      "pct_of_bot_prs": 0.22
+    },
+    {
+      "login": "trunk-dev[bot]",
+      "prs_opened": 67,
+      "pct_of_bot_prs": 0.22
+    }
+  ],
+  "watchlist": [
+    {
+      "repo": "elastic/elasticsearch",
+      "human_prs_opened": 31,
+      "distinct_human_actors": 23,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0,
+      "outside_prs_closed": 21,
+      "outside_merge_rate": 80.95
+    },
+    {
+      "repo": "microsoft/vscode",
+      "human_prs_opened": 30,
+      "distinct_human_actors": 18,
+      "fanout_actors": 1,
+      "pct_actors_fanout": 5.56,
+      "outside_prs_closed": 4,
+      "outside_merge_rate": 75.0
+    },
+    {
+      "repo": "home-assistant/core",
+      "human_prs_opened": 26,
+      "distinct_human_actors": 11,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0,
+      "outside_prs_closed": 14,
+      "outside_merge_rate": 100.0
+    },
+    {
+      "repo": "grafana/grafana",
+      "human_prs_opened": 15,
+      "distinct_human_actors": 15,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0,
+      "outside_prs_closed": 7,
+      "outside_merge_rate": 85.71
+    },
+    {
+      "repo": "python/cpython",
+      "human_prs_opened": 13,
+      "distinct_human_actors": 8,
+      "fanout_actors": 1,
+      "pct_actors_fanout": 12.5,
+      "outside_prs_closed": 9,
+      "outside_merge_rate": 77.78
+    },
+    {
+      "repo": "kubernetes/kubernetes",
+      "human_prs_opened": 12,
+      "distinct_human_actors": 9,
+      "fanout_actors": 1,
+      "pct_actors_fanout": 11.11,
+      "outside_prs_closed": 10,
+      "outside_merge_rate": 30.0
+    },
+    {
+      "repo": "huggingface/transformers",
+      "human_prs_opened": 12,
+      "distinct_human_actors": 11,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0,
+      "outside_prs_closed": 3,
+      "outside_merge_rate": 100.0
+    },
+    {
+      "repo": "pytorch/pytorch",
+      "human_prs_opened": 11,
+      "distinct_human_actors": 11,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0,
+      "outside_prs_closed": 10,
+      "outside_merge_rate": 10.0
+    },
+    {
+      "repo": "rust-lang/rust",
+      "human_prs_opened": 11,
+      "distinct_human_actors": 11,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0,
+      "outside_prs_closed": 7,
+      "outside_merge_rate": 85.71
+    },
+    {
+      "repo": "godotengine/godot",
+      "human_prs_opened": 10,
+      "distinct_human_actors": 9,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0,
+      "outside_prs_closed": 1,
+      "outside_merge_rate": 0.0
+    },
+    {
+      "repo": "langchain-ai/langchain",
+      "human_prs_opened": 6,
+      "distinct_human_actors": 5,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0,
+      "outside_prs_closed": 2,
+      "outside_merge_rate": 50.0
+    },
+    {
+      "repo": "vercel/next.js",
+      "human_prs_opened": 6,
+      "distinct_human_actors": 5,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0,
+      "outside_prs_closed": 3,
+      "outside_merge_rate": 66.67
+    }
+  ],
+  "most_fanout_exposed_repos": [
+    {
+      "repo": "scalr-automation/terraform-scalr-flat-mirror4",
+      "human_prs_opened": 45,
+      "distinct_human_actors": 7,
+      "fanout_actors": 7,
+      "pct_actors_fanout": 100.0
+    },
+    {
+      "repo": "scalr-automation/terraform-scalr-flat-mirror5",
+      "human_prs_opened": 22,
+      "distinct_human_actors": 7,
+      "fanout_actors": 7,
+      "pct_actors_fanout": 100.0
+    },
+    {
+      "repo": "openshift/release",
+      "human_prs_opened": 30,
+      "distinct_human_actors": 27,
+      "fanout_actors": 3,
+      "pct_actors_fanout": 11.11
+    },
+    {
+      "repo": "openshift/openshift-docs",
+      "human_prs_opened": 65,
+      "distinct_human_actors": 13,
+      "fanout_actors": 1,
+      "pct_actors_fanout": 7.69
+    },
+    {
+      "repo": "microsoft/vscode",
+      "human_prs_opened": 30,
+      "distinct_human_actors": 18,
+      "fanout_actors": 1,
+      "pct_actors_fanout": 5.56
+    },
+    {
+      "repo": "zephyrproject-rtos/zephyr",
+      "human_prs_opened": 29,
+      "distinct_human_actors": 21,
+      "fanout_actors": 1,
+      "pct_actors_fanout": 4.76
+    },
+    {
+      "repo": "microsoft/winget-pkgs",
+      "human_prs_opened": 78,
+      "distinct_human_actors": 31,
+      "fanout_actors": 1,
+      "pct_actors_fanout": 3.23
+    },
+    {
+      "repo": "RUCICS/exercise2_GitPR",
+      "human_prs_opened": 78,
+      "distinct_human_actors": 71,
+      "fanout_actors": 1,
+      "pct_actors_fanout": 1.41
+    },
+    {
+      "repo": "NixOS/nixpkgs",
+      "human_prs_opened": 95,
+      "distinct_human_actors": 42,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "Homebrew/homebrew-cask",
+      "human_prs_opened": 64,
+      "distinct_human_actors": 9,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "llvm/llvm-project",
+      "human_prs_opened": 57,
+      "distinct_human_actors": 39,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "digitalinnovationone/dio-lab-open-source",
+      "human_prs_opened": 48,
+      "distinct_human_actors": 44,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "Homebrew/homebrew-core",
+      "human_prs_opened": 47,
+      "distinct_human_actors": 5,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "elastic/kibana",
+      "human_prs_opened": 43,
+      "distinct_human_actors": 21,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "odoo/odoo",
+      "human_prs_opened": 40,
+      "distinct_human_actors": 37,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "WebKit/WebKit",
+      "human_prs_opened": 34,
+      "distinct_human_actors": 25,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "WargaLab-Information-Systems/pemrograman-visual-3C-2024",
+      "human_prs_opened": 34,
+      "distinct_human_actors": 34,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "elastic/elasticsearch",
+      "human_prs_opened": 31,
+      "distinct_human_actors": 23,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "getsentry/sentry",
+      "human_prs_opened": 30,
+      "distinct_human_actors": 19,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "brianchandotcom/liferay-portal",
+      "human_prs_opened": 28,
+      "distinct_human_actors": 8,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "ydb-platform/ydb",
+      "human_prs_opened": 27,
+      "distinct_human_actors": 16,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "home-assistant/core",
+      "human_prs_opened": 26,
+      "distinct_human_actors": 11,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "apache/doris",
+      "human_prs_opened": 26,
+      "distinct_human_actors": 18,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "Exp-Intro-to-GitHub-Flow-Cohort-2/exp-intro-to-github-flow-cohort-2-classroom-ed7b0d-intro-Series-Intro-to-GitHub-Flow-template-repo",
+      "human_prs_opened": 24,
+      "distinct_human_actors": 17,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "Alancq/test1-SIS112_2024",
+      "human_prs_opened": 24,
+      "distinct_human_actors": 24,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "aikodigital/teste-frontend-v4",
+      "human_prs_opened": 23,
+      "distinct_human_actors": 23,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "Yawn-Sean/Daily_CF_Problems",
+      "human_prs_opened": 23,
+      "distinct_human_actors": 18,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "Chameleon-company/MOP-Code",
+      "human_prs_opened": 22,
+      "distinct_human_actors": 19,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "ChrisTitusTech/linutil",
+      "human_prs_opened": 21,
+      "distinct_human_actors": 7,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "gravitational/teleport",
+      "human_prs_opened": 20,
+      "distinct_human_actors": 12,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    }
+  ],
+  "busiest_repos": [
+    {
+      "repo": "NixOS/nixpkgs",
+      "human_prs_opened": 95,
+      "distinct_human_actors": 42,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "microsoft/winget-pkgs",
+      "human_prs_opened": 78,
+      "distinct_human_actors": 31,
+      "fanout_actors": 1,
+      "pct_actors_fanout": 3.23
+    },
+    {
+      "repo": "RUCICS/exercise2_GitPR",
+      "human_prs_opened": 78,
+      "distinct_human_actors": 71,
+      "fanout_actors": 1,
+      "pct_actors_fanout": 1.41
+    },
+    {
+      "repo": "openshift/openshift-docs",
+      "human_prs_opened": 65,
+      "distinct_human_actors": 13,
+      "fanout_actors": 1,
+      "pct_actors_fanout": 7.69
+    },
+    {
+      "repo": "Homebrew/homebrew-cask",
+      "human_prs_opened": 64,
+      "distinct_human_actors": 9,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "llvm/llvm-project",
+      "human_prs_opened": 57,
+      "distinct_human_actors": 39,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "digitalinnovationone/dio-lab-open-source",
+      "human_prs_opened": 48,
+      "distinct_human_actors": 44,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "Homebrew/homebrew-core",
+      "human_prs_opened": 47,
+      "distinct_human_actors": 5,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "scalr-automation/terraform-scalr-flat-mirror4",
+      "human_prs_opened": 45,
+      "distinct_human_actors": 7,
+      "fanout_actors": 7,
+      "pct_actors_fanout": 100.0
+    },
+    {
+      "repo": "elastic/kibana",
+      "human_prs_opened": 43,
+      "distinct_human_actors": 21,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "odoo/odoo",
+      "human_prs_opened": 40,
+      "distinct_human_actors": 37,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "WebKit/WebKit",
+      "human_prs_opened": 34,
+      "distinct_human_actors": 25,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "WargaLab-Information-Systems/pemrograman-visual-3C-2024",
+      "human_prs_opened": 34,
+      "distinct_human_actors": 34,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "elastic/elasticsearch",
+      "human_prs_opened": 31,
+      "distinct_human_actors": 23,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "getsentry/sentry",
+      "human_prs_opened": 30,
+      "distinct_human_actors": 19,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "microsoft/vscode",
+      "human_prs_opened": 30,
+      "distinct_human_actors": 18,
+      "fanout_actors": 1,
+      "pct_actors_fanout": 5.56
+    },
+    {
+      "repo": "openshift/release",
+      "human_prs_opened": 30,
+      "distinct_human_actors": 27,
+      "fanout_actors": 3,
+      "pct_actors_fanout": 11.11
+    },
+    {
+      "repo": "zephyrproject-rtos/zephyr",
+      "human_prs_opened": 29,
+      "distinct_human_actors": 21,
+      "fanout_actors": 1,
+      "pct_actors_fanout": 4.76
+    },
+    {
+      "repo": "brianchandotcom/liferay-portal",
+      "human_prs_opened": 28,
+      "distinct_human_actors": 8,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "ydb-platform/ydb",
+      "human_prs_opened": 27,
+      "distinct_human_actors": 16,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "home-assistant/core",
+      "human_prs_opened": 26,
+      "distinct_human_actors": 11,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "apache/doris",
+      "human_prs_opened": 26,
+      "distinct_human_actors": 18,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "Exp-Intro-to-GitHub-Flow-Cohort-2/exp-intro-to-github-flow-cohort-2-classroom-ed7b0d-intro-Series-Intro-to-GitHub-Flow-template-repo",
+      "human_prs_opened": 24,
+      "distinct_human_actors": 17,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "Alancq/test1-SIS112_2024",
+      "human_prs_opened": 24,
+      "distinct_human_actors": 24,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "aikodigital/teste-frontend-v4",
+      "human_prs_opened": 23,
+      "distinct_human_actors": 23,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "Yawn-Sean/Daily_CF_Problems",
+      "human_prs_opened": 23,
+      "distinct_human_actors": 18,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "Chameleon-company/MOP-Code",
+      "human_prs_opened": 22,
+      "distinct_human_actors": 19,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "scalr-automation/terraform-scalr-flat-mirror5",
+      "human_prs_opened": 22,
+      "distinct_human_actors": 7,
+      "fanout_actors": 7,
+      "pct_actors_fanout": 100.0
+    },
+    {
+      "repo": "ChrisTitusTech/linutil",
+      "human_prs_opened": 21,
+      "distinct_human_actors": 7,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "gravitational/teleport",
+      "human_prs_opened": 20,
+      "distinct_human_actors": 12,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    }
+  ],
+  "min_cell": 5,
+  "suppressed_rows": 43998,
+  "hours": [
+    {
+      "hour": "2024-09-18-0",
+      "ok": true,
+      "pr_opened": 7876,
+      "pr_closed_scored": 5825,
+      "full_schema": true
+    },
+    {
+      "hour": "2024-09-18-2",
+      "ok": true,
+      "pr_opened": 8580,
+      "pr_closed_scored": 5450,
+      "full_schema": true
+    },
+    {
+      "hour": "2024-09-18-4",
+      "ok": true,
+      "pr_opened": 7445,
+      "pr_closed_scored": 5046,
+      "full_schema": true
+    },
+    {
+      "hour": "2024-09-18-6",
+      "ok": true,
+      "pr_opened": 7361,
+      "pr_closed_scored": 6393,
+      "full_schema": true
+    },
+    {
+      "hour": "2024-09-18-8",
+      "ok": true,
+      "pr_opened": 9376,
+      "pr_closed_scored": 8548,
+      "full_schema": true
+    },
+    {
+      "hour": "2024-09-18-10",
+      "ok": true,
+      "pr_opened": 10485,
+      "pr_closed_scored": 7296,
+      "full_schema": true
+    },
+    {
+      "hour": "2024-09-18-12",
+      "ok": true,
+      "pr_opened": 10887,
+      "pr_closed_scored": 8420,
+      "full_schema": true
+    },
+    {
+      "hour": "2024-09-18-14",
+      "ok": true,
+      "pr_opened": 9415,
+      "pr_closed_scored": 9015,
+      "full_schema": true
+    },
+    {
+      "hour": "2024-09-18-16",
+      "ok": true,
+      "pr_opened": 8949,
+      "pr_closed_scored": 8378,
+      "full_schema": true
+    },
+    {
+      "hour": "2024-09-18-18",
+      "ok": true,
+      "pr_opened": 7396,
+      "pr_closed_scored": 6861,
+      "full_schema": true
+    },
+    {
+      "hour": "2024-09-18-20",
+      "ok": true,
+      "pr_opened": 7231,
+      "pr_closed_scored": 6416,
+      "full_schema": true
+    },
+    {
+      "hour": "2024-09-18-22",
+      "ok": true,
+      "pr_opened": 6196,
+      "pr_closed_scored": 5434,
+      "full_schema": true
+    }
+  ]
+}

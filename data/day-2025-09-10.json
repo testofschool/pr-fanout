@@ -1,0 +1,709 @@
+{
+  "tool": "pr-fanout/0.1.0",
+  "date": "2025-09-10",
+  "hours_requested": 12,
+  "hours_collected": 12,
+  "all_hours_full_schema": true,
+  "summary": {
+    "label": "2025-09",
+    "threshold_repos": 3,
+    "human_prs_opened": 43247,
+    "bot_prs_opened": 56804,
+    "agent_prs_opened": 1171,
+    "pct_prs_by_agents": 1.16,
+    "pct_prs_by_bots": 56.12,
+    "human_actors": 27424,
+    "fanout_actors": 261,
+    "pct_human_prs_from_fanout": 11.89,
+    "pct_actors_fanout": 0.95
+  },
+  "threshold_sweep": [
+    {
+      "label": "2025-09",
+      "threshold_repos": 2,
+      "human_prs_opened": 43247,
+      "bot_prs_opened": 56804,
+      "agent_prs_opened": 1171,
+      "pct_prs_by_agents": 1.16,
+      "pct_prs_by_bots": 56.12,
+      "human_actors": 27424,
+      "fanout_actors": 1392,
+      "pct_human_prs_from_fanout": 19.21,
+      "pct_actors_fanout": 5.08
+    },
+    {
+      "label": "2025-09",
+      "threshold_repos": 3,
+      "human_prs_opened": 43247,
+      "bot_prs_opened": 56804,
+      "agent_prs_opened": 1171,
+      "pct_prs_by_agents": 1.16,
+      "pct_prs_by_bots": 56.12,
+      "human_actors": 27424,
+      "fanout_actors": 261,
+      "pct_human_prs_from_fanout": 11.89,
+      "pct_actors_fanout": 0.95
+    },
+    {
+      "label": "2025-09",
+      "threshold_repos": 4,
+      "human_prs_opened": 43247,
+      "bot_prs_opened": 56804,
+      "agent_prs_opened": 1171,
+      "pct_prs_by_agents": 1.16,
+      "pct_prs_by_bots": 56.12,
+      "human_actors": 27424,
+      "fanout_actors": 132,
+      "pct_human_prs_from_fanout": 9.74,
+      "pct_actors_fanout": 0.48
+    },
+    {
+      "label": "2025-09",
+      "threshold_repos": 5,
+      "human_prs_opened": 43247,
+      "bot_prs_opened": 56804,
+      "agent_prs_opened": 1171,
+      "pct_prs_by_agents": 1.16,
+      "pct_prs_by_bots": 56.12,
+      "human_actors": 27424,
+      "fanout_actors": 89,
+      "pct_human_prs_from_fanout": 9.17,
+      "pct_actors_fanout": 0.32
+    },
+    {
+      "label": "2025-09",
+      "threshold_repos": 10,
+      "human_prs_opened": 43247,
+      "bot_prs_opened": 56804,
+      "agent_prs_opened": 1171,
+      "pct_prs_by_agents": 1.16,
+      "pct_prs_by_bots": 56.12,
+      "human_actors": 27424,
+      "fanout_actors": 30,
+      "pct_human_prs_from_fanout": 5.0,
+      "pct_actors_fanout": 0.11
+    }
+  ],
+  "association": {
+    "outside_prs_closed": 39276,
+    "outside_merge_rate": 74.43,
+    "inside_prs_closed": 29054,
+    "inside_merge_rate": 80.73
+  },
+  "repos_per_actor_histogram": {
+    "1": 26032,
+    "2": 1131,
+    "3": 129,
+    "4": 43,
+    "5": 17,
+    "6": 14,
+    "7": 11,
+    "8": 9,
+    "9": 8,
+    "50+": 1,
+    "10-19": 26,
+    "20-49": 3
+  },
+  "top_agent_logins": [
+    {
+      "login": "Copilot",
+      "prs_opened": 1113
+    },
+    {
+      "login": "devin-ai-integration[bot]",
+      "prs_opened": 37
+    },
+    {
+      "login": "staging-devin-ai-integration[bot]",
+      "prs_opened": 20
+    },
+    {
+      "login": "codegen-sh[bot]",
+      "prs_opened": 1
+    }
+  ],
+  "top_bot_logins": [
+    {
+      "login": "dependabot[bot]",
+      "prs_opened": 37648,
+      "pct_of_bot_prs": 66.28
+    },
+    {
+      "login": "pull[bot]",
+      "prs_opened": 9881,
+      "pct_of_bot_prs": 17.39
+    },
+    {
+      "login": "renovate[bot]",
+      "prs_opened": 4067,
+      "pct_of_bot_prs": 7.16
+    },
+    {
+      "login": "github-actions[bot]",
+      "prs_opened": 1136,
+      "pct_of_bot_prs": 2.0
+    },
+    {
+      "login": "konflux-staging[bot]",
+      "prs_opened": 531,
+      "pct_of_bot_prs": 0.93
+    },
+    {
+      "login": "snyk-io[bot]",
+      "prs_opened": 237,
+      "pct_of_bot_prs": 0.42
+    },
+    {
+      "login": "red-hat-konflux[bot]",
+      "prs_opened": 155,
+      "pct_of_bot_prs": 0.27
+    },
+    {
+      "login": "swa-runner-app[bot]",
+      "prs_opened": 118,
+      "pct_of_bot_prs": 0.21
+    },
+    {
+      "login": "regro-cf-autotick-bot",
+      "prs_opened": 115,
+      "pct_of_bot_prs": 0.2
+    },
+    {
+      "login": "trunk-io[bot]",
+      "prs_opened": 104,
+      "pct_of_bot_prs": 0.18
+    },
+    {
+      "login": "github-classroom[bot]",
+      "prs_opened": 93,
+      "pct_of_bot_prs": 0.16
+    },
+    {
+      "login": "google-labs-jules[bot]",
+      "prs_opened": 92,
+      "pct_of_bot_prs": 0.16
+    },
+    {
+      "login": "exercism-solutions-syncer[bot]",
+      "prs_opened": 92,
+      "pct_of_bot_prs": 0.16
+    },
+    {
+      "login": "copybara-service[bot]",
+      "prs_opened": 90,
+      "pct_of_bot_prs": 0.16
+    },
+    {
+      "login": "red-hat-konflux-kflux-prd-rh03[bot]",
+      "prs_opened": 89,
+      "pct_of_bot_prs": 0.16
+    },
+    {
+      "login": "konflux-internal-p02[bot]",
+      "prs_opened": 75,
+      "pct_of_bot_prs": 0.13
+    },
+    {
+      "login": "unified-repo-staging[bot]",
+      "prs_opened": 68,
+      "pct_of_bot_prs": 0.12
+    },
+    {
+      "login": "rhtap-qe-app[bot]",
+      "prs_opened": 68,
+      "pct_of_bot_prs": 0.12
+    },
+    {
+      "login": "mergify[bot]",
+      "prs_opened": 65,
+      "pct_of_bot_prs": 0.11
+    },
+    {
+      "login": "pyup-bot",
+      "prs_opened": 61,
+      "pct_of_bot_prs": 0.11
+    },
+    {
+      "login": "gh-actions-test-bot",
+      "prs_opened": 56,
+      "pct_of_bot_prs": 0.1
+    },
+    {
+      "login": "security-alliance-bot",
+      "prs_opened": 53,
+      "pct_of_bot_prs": 0.09
+    },
+    {
+      "login": "depfu[bot]",
+      "prs_opened": 49,
+      "pct_of_bot_prs": 0.09
+    },
+    {
+      "login": "prawn-test-staging-rw[bot]",
+      "prs_opened": 36,
+      "pct_of_bot_prs": 0.06
+    },
+    {
+      "login": "openshift-helm-charts-bot",
+      "prs_opened": 36,
+      "pct_of_bot_prs": 0.06
+    }
+  ],
+  "watchlist": [
+    {
+      "repo": "pytorch/pytorch",
+      "human_prs_opened": 26,
+      "distinct_human_actors": 20,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0,
+      "outside_prs_closed": 20,
+      "outside_merge_rate": 0.0
+    },
+    {
+      "repo": "grafana/grafana",
+      "human_prs_opened": 17,
+      "distinct_human_actors": 15,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0,
+      "outside_prs_closed": 7,
+      "outside_merge_rate": 100.0
+    },
+    {
+      "repo": "elastic/elasticsearch",
+      "human_prs_opened": 16,
+      "distinct_human_actors": 11,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0,
+      "outside_prs_closed": 12,
+      "outside_merge_rate": 83.33
+    },
+    {
+      "repo": "home-assistant/core",
+      "human_prs_opened": 13,
+      "distinct_human_actors": 8,
+      "fanout_actors": 1,
+      "pct_actors_fanout": 12.5,
+      "outside_prs_closed": 5,
+      "outside_merge_rate": 80.0
+    },
+    {
+      "repo": "python/cpython",
+      "human_prs_opened": 8,
+      "distinct_human_actors": 8,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0,
+      "outside_prs_closed": 1,
+      "outside_merge_rate": 100.0
+    },
+    {
+      "repo": "microsoft/vscode",
+      "human_prs_opened": 8,
+      "distinct_human_actors": 7,
+      "fanout_actors": 1,
+      "pct_actors_fanout": 14.29,
+      "outside_prs_closed": 3,
+      "outside_merge_rate": 0.0
+    },
+    {
+      "repo": "huggingface/transformers",
+      "human_prs_opened": 8,
+      "distinct_human_actors": 5,
+      "fanout_actors": 1,
+      "pct_actors_fanout": 20.0,
+      "outside_prs_closed": 6,
+      "outside_merge_rate": 83.33
+    },
+    {
+      "repo": "apache/airflow",
+      "human_prs_opened": 7,
+      "distinct_human_actors": 6,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0,
+      "outside_prs_closed": 9,
+      "outside_merge_rate": 88.89
+    },
+    {
+      "repo": "rust-lang/rust",
+      "human_prs_opened": 7,
+      "distinct_human_actors": 7,
+      "fanout_actors": 1,
+      "pct_actors_fanout": 14.29,
+      "outside_prs_closed": 0,
+      "outside_merge_rate": null
+    },
+    {
+      "repo": "supabase/supabase",
+      "human_prs_opened": 6,
+      "distinct_human_actors": 5,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0,
+      "outside_prs_closed": 4,
+      "outside_merge_rate": 75.0
+    }
+  ],
+  "most_fanout_exposed_repos": [
+    {
+      "repo": "Homebrew/homebrew-core",
+      "human_prs_opened": 157,
+      "distinct_human_actors": 5,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "microsoft/winget-pkgs",
+      "human_prs_opened": 94,
+      "distinct_human_actors": 28,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "NixOS/nixpkgs",
+      "human_prs_opened": 58,
+      "distinct_human_actors": 30,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "llvm/llvm-project",
+      "human_prs_opened": 39,
+      "distinct_human_actors": 35,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "odoo/odoo",
+      "human_prs_opened": 35,
+      "distinct_human_actors": 29,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "pytorch/pytorch",
+      "human_prs_opened": 26,
+      "distinct_human_actors": 20,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "getsentry/sentry",
+      "human_prs_opened": 21,
+      "distinct_human_actors": 18,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "camunda/camunda",
+      "human_prs_opened": 21,
+      "distinct_human_actors": 14,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "researcher111/DS2022",
+      "human_prs_opened": 20,
+      "distinct_human_actors": 20,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    }
+  ],
+  "busiest_repos": [
+    {
+      "repo": "Homebrew/homebrew-core",
+      "human_prs_opened": 157,
+      "distinct_human_actors": 5,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "microsoft/winget-pkgs",
+      "human_prs_opened": 94,
+      "distinct_human_actors": 28,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "NixOS/nixpkgs",
+      "human_prs_opened": 58,
+      "distinct_human_actors": 30,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "llvm/llvm-project",
+      "human_prs_opened": 39,
+      "distinct_human_actors": 35,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "odoo/odoo",
+      "human_prs_opened": 35,
+      "distinct_human_actors": 29,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "pytorch/pytorch",
+      "human_prs_opened": 26,
+      "distinct_human_actors": 20,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "getsentry/sentry",
+      "human_prs_opened": 21,
+      "distinct_human_actors": 18,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "camunda/camunda",
+      "human_prs_opened": 21,
+      "distinct_human_actors": 14,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "researcher111/DS2022",
+      "human_prs_opened": 20,
+      "distinct_human_actors": 20,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "ScottyLabs/applications",
+      "human_prs_opened": 19,
+      "distinct_human_actors": 16,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "scalr-automation/terraform-scalr-flat",
+      "human_prs_opened": 19,
+      "distinct_human_actors": 5,
+      "fanout_actors": 5,
+      "pct_actors_fanout": 100.0
+    },
+    {
+      "repo": "woowacourse/java-http",
+      "human_prs_opened": 18,
+      "distinct_human_actors": 18,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "elastic/kibana",
+      "human_prs_opened": 18,
+      "distinct_human_actors": 14,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "ydb-platform/ydb",
+      "human_prs_opened": 17,
+      "distinct_human_actors": 10,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "grafana/grafana",
+      "human_prs_opened": 17,
+      "distinct_human_actors": 15,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "openshift/openshift-docs",
+      "human_prs_opened": 17,
+      "distinct_human_actors": 7,
+      "fanout_actors": 1,
+      "pct_actors_fanout": 14.29
+    },
+    {
+      "repo": "pytorch/executorch",
+      "human_prs_opened": 16,
+      "distinct_human_actors": 10,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "elastic/elasticsearch",
+      "human_prs_opened": 16,
+      "distinct_human_actors": 11,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "Kyyneko/TuPrak-1-AP",
+      "human_prs_opened": 15,
+      "distinct_human_actors": 15,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "PostHog/posthog",
+      "human_prs_opened": 15,
+      "distinct_human_actors": 15,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "CorporationX/god_bless",
+      "human_prs_opened": 15,
+      "distinct_human_actors": 10,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "scalr-automation/terraform-scalr-nested-mirror1",
+      "human_prs_opened": 15,
+      "distinct_human_actors": 7,
+      "fanout_actors": 7,
+      "pct_actors_fanout": 100.0
+    },
+    {
+      "repo": "MetaMask/metamask-mobile",
+      "human_prs_opened": 14,
+      "distinct_human_actors": 11,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "brianchandotcom/liferay-portal",
+      "human_prs_opened": 14,
+      "distinct_human_actors": 7,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "scalr-automation/terraform-scalr-flat-mirror3",
+      "human_prs_opened": 14,
+      "distinct_human_actors": 6,
+      "fanout_actors": 6,
+      "pct_actors_fanout": 100.0
+    },
+    {
+      "repo": "MetaMask/metamask-extension",
+      "human_prs_opened": 13,
+      "distinct_human_actors": 9,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub",
+      "human_prs_opened": 13,
+      "distinct_human_actors": 12,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "home-assistant/core",
+      "human_prs_opened": 13,
+      "distinct_human_actors": 8,
+      "fanout_actors": 1,
+      "pct_actors_fanout": 12.5
+    },
+    {
+      "repo": "JetBrains/swot",
+      "human_prs_opened": 13,
+      "distinct_human_actors": 13,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "google-gemini/gemini-cli",
+      "human_prs_opened": 12,
+      "distinct_human_actors": 11,
+      "fanout_actors": 1,
+      "pct_actors_fanout": 9.09
+    }
+  ],
+  "min_cell": 5,
+  "suppressed_rows": 26456,
+  "hours": [
+    {
+      "hour": "2025-09-10-0",
+      "ok": true,
+      "pr_opened": 6331,
+      "pr_closed_scored": 5806,
+      "full_schema": true
+    },
+    {
+      "hour": "2025-09-10-2",
+      "ok": true,
+      "pr_opened": 8370,
+      "pr_closed_scored": 5797,
+      "full_schema": true
+    },
+    {
+      "hour": "2025-09-10-4",
+      "ok": true,
+      "pr_opened": 5457,
+      "pr_closed_scored": 5011,
+      "full_schema": true
+    },
+    {
+      "hour": "2025-09-10-6",
+      "ok": true,
+      "pr_opened": 5574,
+      "pr_closed_scored": 5456,
+      "full_schema": true
+    },
+    {
+      "hour": "2025-09-10-8",
+      "ok": true,
+      "pr_opened": 6280,
+      "pr_closed_scored": 6295,
+      "full_schema": true
+    },
+    {
+      "hour": "2025-09-10-10",
+      "ok": true,
+      "pr_opened": 6424,
+      "pr_closed_scored": 5661,
+      "full_schema": true
+    },
+    {
+      "hour": "2025-09-10-12",
+      "ok": true,
+      "pr_opened": 5617,
+      "pr_closed_scored": 5520,
+      "full_schema": true
+    },
+    {
+      "hour": "2025-09-10-14",
+      "ok": true,
+      "pr_opened": 6566,
+      "pr_closed_scored": 6361,
+      "full_schema": true
+    },
+    {
+      "hour": "2025-09-10-16",
+      "ok": true,
+      "pr_opened": 6271,
+      "pr_closed_scored": 6249,
+      "full_schema": true
+    },
+    {
+      "hour": "2025-09-10-18",
+      "ok": true,
+      "pr_opened": 20769,
+      "pr_closed_scored": 4774,
+      "full_schema": true
+    },
+    {
+      "hour": "2025-09-10-20",
+      "ok": true,
+      "pr_opened": 15657,
+      "pr_closed_scored": 5705,
+      "full_schema": true
+    },
+    {
+      "hour": "2025-09-10-22",
+      "ok": true,
+      "pr_opened": 7906,
+      "pr_closed_scored": 5695,
+      "full_schema": true
+    }
+  ]
+}

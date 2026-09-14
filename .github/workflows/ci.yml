@@ -1,0 +1,40 @@
+name: ci
+on:
+  push: { branches: [main] }
+  pull_request:
+  schedule:
+    - cron: "0 6 * * 1"   # weekly: catch GH Archive schema drift early
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "${{ matrix.python }}" }
+      # Pinned: an unpinned linter turns a finished, untouched repository
+      # red the day it ships a new rule.
+      - run: pip install pytest==8.3.4 ruff==0.16.7
+      - run: ruff check src tests
+      - run: PYTHONPATH=src python -m pytest -q
+
+  reproduce:
+    # Proves the published numbers still come out of the published code.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: PYTHONPATH=src python -m pr_fanout collect --date 2025-09-10 --every 12 --out /tmp/spot.json
+      - name: spot check
+        run: |
+          PYTHONPATH=src python - <<'PY'
+          import json
+          d = json.load(open("/tmp/spot.json"))
+          assert d["summary"]["human_prs_opened"] > 0, "archive returned nothing"
+          assert d["all_hours_full_schema"], "archive schema changed - regenerate the dataset"
+          print("spot check ok:", d["summary"])
+          PY

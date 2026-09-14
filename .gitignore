@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+cache/
+*.gz
+# the frozen test fixture is tracked on purpose (an inline comment here
+# would become part of the pattern and silently keep the file ignored)
+!tests/fixtures/*.gz
+collect.log
+run_collect.sh

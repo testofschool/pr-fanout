@@ -1,0 +1,401 @@
+{
+  "tool": "pr-fanout/0.1.0",
+  "date": "2026-09-09",
+  "hours_requested": 12,
+  "hours_collected": 12,
+  "all_hours_full_schema": false,
+  "summary": {
+    "label": "2026-09",
+    "threshold_repos": 3,
+    "human_prs_opened": 11816,
+    "bot_prs_opened": 4788,
+    "agent_prs_opened": 73,
+    "pct_prs_by_agents": 0.44,
+    "pct_prs_by_bots": 28.71,
+    "human_actors": 9902,
+    "fanout_actors": 86,
+    "pct_human_prs_from_fanout": 4.23,
+    "pct_actors_fanout": 0.87
+  },
+  "threshold_sweep": [
+    {
+      "label": "2026-09",
+      "threshold_repos": 2,
+      "human_prs_opened": 11816,
+      "bot_prs_opened": 4788,
+      "agent_prs_opened": 73,
+      "pct_prs_by_agents": 0.44,
+      "pct_prs_by_bots": 28.71,
+      "human_actors": 9902,
+      "fanout_actors": 358,
+      "pct_human_prs_from_fanout": 9.58,
+      "pct_actors_fanout": 3.62
+    },
+    {
+      "label": "2026-09",
+      "threshold_repos": 3,
+      "human_prs_opened": 11816,
+      "bot_prs_opened": 4788,
+      "agent_prs_opened": 73,
+      "pct_prs_by_agents": 0.44,
+      "pct_prs_by_bots": 28.71,
+      "human_actors": 9902,
+      "fanout_actors": 86,
+      "pct_human_prs_from_fanout": 4.23,
+      "pct_actors_fanout": 0.87
+    },
+    {
+      "label": "2026-09",
+      "threshold_repos": 4,
+      "human_prs_opened": 11816,
+      "bot_prs_opened": 4788,
+      "agent_prs_opened": 73,
+      "pct_prs_by_agents": 0.44,
+      "pct_prs_by_bots": 28.71,
+      "human_actors": 9902,
+      "fanout_actors": 39,
+      "pct_human_prs_from_fanout": 2.72,
+      "pct_actors_fanout": 0.39
+    },
+    {
+      "label": "2026-09",
+      "threshold_repos": 5,
+      "human_prs_opened": 11816,
+      "bot_prs_opened": 4788,
+      "agent_prs_opened": 73,
+      "pct_prs_by_agents": 0.44,
+      "pct_prs_by_bots": 28.71,
+      "human_actors": 9902,
+      "fanout_actors": 17,
+      "pct_human_prs_from_fanout": 1.42,
+      "pct_actors_fanout": 0.17
+    },
+    {
+      "label": "2026-09",
+      "threshold_repos": 10,
+      "human_prs_opened": 11816,
+      "bot_prs_opened": 4788,
+      "agent_prs_opened": 73,
+      "pct_prs_by_agents": 0.44,
+      "pct_prs_by_bots": 28.71,
+      "human_actors": 9902,
+      "fanout_actors": 2,
+      "pct_human_prs_from_fanout": 0.28,
+      "pct_actors_fanout": 0.02
+    }
+  ],
+  "association": {
+    "outside_prs_closed": 0,
+    "outside_merge_rate": null,
+    "inside_prs_closed": 0,
+    "inside_merge_rate": null
+  },
+  "repos_per_actor_histogram": {
+    "1": 9544,
+    "2": 272,
+    "3": 47,
+    "4": 22,
+    "5": 8,
+    "6": 3,
+    "7": 2,
+    "8": 1,
+    "9": 1,
+    "10-19": 2
+  },
+  "top_agent_logins": [
+    {
+      "login": "Copilot",
+      "prs_opened": 58
+    },
+    {
+      "login": "devin-ai-integration[bot]",
+      "prs_opened": 15
+    }
+  ],
+  "top_bot_logins": [
+    {
+      "login": "dependabot[bot]",
+      "prs_opened": 2000,
+      "pct_of_bot_prs": 41.77
+    },
+    {
+      "login": "pull[bot]",
+      "prs_opened": 1110,
+      "pct_of_bot_prs": 23.18
+    },
+    {
+      "login": "renovate[bot]",
+      "prs_opened": 465,
+      "pct_of_bot_prs": 9.71
+    },
+    {
+      "login": "github-actions[bot]",
+      "prs_opened": 243,
+      "pct_of_bot_prs": 5.08
+    },
+    {
+      "login": "dhi-app[bot]",
+      "prs_opened": 86,
+      "pct_of_bot_prs": 1.8
+    },
+    {
+      "login": "arena-ai-coding-agent[bot]",
+      "prs_opened": 47,
+      "pct_of_bot_prs": 0.98
+    },
+    {
+      "login": "trunk-io[bot]",
+      "prs_opened": 27,
+      "pct_of_bot_prs": 0.56
+    },
+    {
+      "login": "release-service-bot",
+      "prs_opened": 26,
+      "pct_of_bot_prs": 0.54
+    },
+    {
+      "login": "swa-synthetics[bot]",
+      "prs_opened": 25,
+      "pct_of_bot_prs": 0.52
+    },
+    {
+      "login": "vercel[bot]",
+      "prs_opened": 20,
+      "pct_of_bot_prs": 0.42
+    },
+    {
+      "login": "red-hat-konflux[bot]",
+      "prs_opened": 18,
+      "pct_of_bot_prs": 0.38
+    },
+    {
+      "login": "konflux-internal-p02[bot]",
+      "prs_opened": 18,
+      "pct_of_bot_prs": 0.38
+    },
+    {
+      "login": "claude[bot]",
+      "prs_opened": 16,
+      "pct_of_bot_prs": 0.33
+    },
+    {
+      "login": "red-hat-konflux-kflux-prd-rh02[bot]",
+      "prs_opened": 14,
+      "pct_of_bot_prs": 0.29
+    },
+    {
+      "login": "copybara-service[bot]",
+      "prs_opened": 13,
+      "pct_of_bot_prs": 0.27
+    },
+    {
+      "login": "cursor[bot]",
+      "prs_opened": 12,
+      "pct_of_bot_prs": 0.25
+    },
+    {
+      "login": "konflux-staging[bot]",
+      "prs_opened": 11,
+      "pct_of_bot_prs": 0.23
+    },
+    {
+      "login": "fullsend-ai-e2e[bot]",
+      "prs_opened": 10,
+      "pct_of_bot_prs": 0.21
+    },
+    {
+      "login": "red-hat-konflux-kflux-prd-rh03[bot]",
+      "prs_opened": 9,
+      "pct_of_bot_prs": 0.19
+    },
+    {
+      "login": "mergify[bot]",
+      "prs_opened": 9,
+      "pct_of_bot_prs": 0.19
+    },
+    {
+      "login": "posthog[bot]",
+      "prs_opened": 9,
+      "pct_of_bot_prs": 0.19
+    },
+    {
+      "login": "swa-runner-app[bot]",
+      "prs_opened": 9,
+      "pct_of_bot_prs": 0.19
+    },
+    {
+      "login": "fbc-release-e2e-bot",
+      "prs_opened": 8,
+      "pct_of_bot_prs": 0.17
+    },
+    {
+      "login": "thewoolleyman-factory-bot[bot]",
+      "prs_opened": 8,
+      "pct_of_bot_prs": 0.17
+    },
+    {
+      "login": "regro-cf-autotick-bot",
+      "prs_opened": 8,
+      "pct_of_bot_prs": 0.17
+    }
+  ],
+  "watchlist": [
+    {
+      "repo": "elastic/elasticsearch",
+      "human_prs_opened": 5,
+      "distinct_human_actors": 5,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0,
+      "outside_prs_closed": 0,
+      "outside_merge_rate": null
+    }
+  ],
+  "most_fanout_exposed_repos": [
+    {
+      "repo": "merge-demo/mergequeue-bazel",
+      "human_prs_opened": 20,
+      "distinct_human_actors": 5,
+      "fanout_actors": 1,
+      "pct_actors_fanout": 20.0
+    }
+  ],
+  "busiest_repos": [
+    {
+      "repo": "merge-demo/mergequeue-bazel",
+      "human_prs_opened": 20,
+      "distinct_human_actors": 5,
+      "fanout_actors": 1,
+      "pct_actors_fanout": 20.0
+    },
+    {
+      "repo": "microsoft/winget-pkgs",
+      "human_prs_opened": 14,
+      "distinct_human_actors": 9,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "ClickHouse/ClickHouse",
+      "human_prs_opened": 9,
+      "distinct_human_actors": 7,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "NousResearch/hermes-agent",
+      "human_prs_opened": 7,
+      "distinct_human_actors": 7,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "raya-lucaria/fdd_o26",
+      "human_prs_opened": 5,
+      "distinct_human_actors": 5,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "PostHog/posthog",
+      "human_prs_opened": 5,
+      "distinct_human_actors": 5,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    },
+    {
+      "repo": "elastic/elasticsearch",
+      "human_prs_opened": 5,
+      "distinct_human_actors": 5,
+      "fanout_actors": 0,
+      "pct_actors_fanout": 0.0
+    }
+  ],
+  "min_cell": 5,
+  "suppressed_rows": 10232,
+  "hours": [
+    {
+      "hour": "2026-09-09-0",
+      "ok": true,
+      "pr_opened": 1622,
+      "pr_closed_scored": 0,
+      "full_schema": false
+    },
+    {
+      "hour": "2026-09-09-2",
+      "ok": true,
+      "pr_opened": 2046,
+      "pr_closed_scored": 0,
+      "full_schema": false
+    },
+    {
+      "hour": "2026-09-09-4",
+      "ok": true,
+      "pr_opened": 1657,
+      "pr_closed_scored": 0,
+      "full_schema": false
+    },
+    {
+      "hour": "2026-09-09-6",
+      "ok": true,
+      "pr_opened": 1131,
+      "pr_closed_scored": 0,
+      "full_schema": false
+    },
+    {
+      "hour": "2026-09-09-8",
+      "ok": true,
+      "pr_opened": 1219,
+      "pr_closed_scored": 0,
+      "full_schema": false
+    },
+    {
+      "hour": "2026-09-09-10",
+      "ok": true,
+      "pr_opened": 1191,
+      "pr_closed_scored": 0,
+      "full_schema": false
+    },
+    {
+      "hour": "2026-09-09-12",
+      "ok": true,
+      "pr_opened": 939,
+      "pr_closed_scored": 0,
+      "full_schema": false
+    },
+    {
+      "hour": "2026-09-09-14",
+      "ok": true,
+      "pr_opened": 882,
+      "pr_closed_scored": 0,
+      "full_schema": false
+    },
+    {
+      "hour": "2026-09-09-16",
+      "ok": true,
+      "pr_opened": 1235,
+      "pr_closed_scored": 0,
+      "full_schema": false
+    },
+    {
+      "hour": "2026-09-09-18",
+      "ok": true,
+      "pr_opened": 1590,
+      "pr_closed_scored": 0,
+      "full_schema": false
+    },
+    {
+      "hour": "2026-09-09-20",
+      "ok": true,
+      "pr_opened": 1816,
+      "pr_closed_scored": 0,
+      "full_schema": false
+    },
+    {
+      "hour": "2026-09-09-22",
+      "ok": true,
+      "pr_opened": 1349,
+      "pr_closed_scored": 0,
+      "full_schema": false
+    }
+  ]
+}

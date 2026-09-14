@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pr-fanout"
+version = "0.1.0"
+description = "Measuring shotgun pull requests on public GitHub, without AI detection"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "felix" }]
+keywords = ["github", "open-source", "maintainers", "pull-requests", "gharchive"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Developers",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/testofschool/pr-fanout"
+Issues = "https://github.com/testofschool/pr-fanout/issues"
+
+[project.scripts]
+pr-fanout = "pr_fanout.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pr_fanout"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
