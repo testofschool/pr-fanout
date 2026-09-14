@@ -18,14 +18,33 @@ are counts of merged pull requests across GitHub, not an agent-authorship share 
 public opened pull requests.
 [GitHub's pull request limits announcement](https://github.blog/open-source/maintainers/how-pull-request-limits-are-cutting-down-the-noise/)
 
-## The published agent share concerns reviews
+## GitHub has published review and author-side figures
 
 On May 7, 2026, Andrea Griffiths wrote: "More than one in five code reviews on
 GitHub now involve an agent."
 [GitHub's guide to reviewing agent pull requests](https://github.blog/ai-and-ml/generative-ai/agent-pull-requests-are-everywhere-heres-how-to-review-them/)
-describes an automated review pass. That is a reviewer-side statistic. The articles
-cited here do not provide a measured share of public pull requests opened by
-coding-agent accounts; their review statistic cannot be substituted for that share.
+describes an automated review pass. That is a reviewer-side statistic.
+
+GitHub has also published an author-side count. In a section about Copilot coding
+agent, [Octoverse 2025](https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/)
+(published October 28, 2025; updated February 28, 2026) states:
+
+> A first glimpse of coding agent shows 1+ million pull requests that were created between May 2025 and September 2025.
+
+This is an absolute count over five months. The article includes methodology, but
+does not attach a matching denominator or an executable reconstruction to this
+agent count. pr-fanout adds a share with an explicit denominator and reproducible
+collection method for its public sample, plus a 2023 baseline.
+
+These figures cannot be converted into comparable rates. Octoverse's methodology
+defaults to public activity unless otherwise noted; private-repository coverage
+is not established for the quoted agent count. pr-fanout samples public
+repositories, using its own known-agent classification and observation windows.
+The article also reports a monthly average of 43.2 million **merged** pull requests
+for its 2025 reporting year. Merged PRs are a different event from **opened** PRs;
+that monthly average is not a denominator for either the five-month created-PR
+count or pr-fanout's sampled opened PRs. No ratio or trend between these figures
+is calculated here.
 
 ## pr-fanout measures declared coding-agent accounts in the public sample
 
