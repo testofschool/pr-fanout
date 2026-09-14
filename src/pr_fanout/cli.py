@@ -88,7 +88,7 @@ def collect(args: argparse.Namespace) -> int:
 
 
 def report(args: argparse.Namespace) -> int:
-    from .report import build_report
+    from .report import ComparisonInvalidError, build_report
 
     paths: list[Path] = []
     for pattern in args.inputs:
@@ -96,7 +96,13 @@ def report(args: argparse.Namespace) -> int:
     if not paths:
         print("no input files matched", file=sys.stderr)
         return 2
-    build_report([json.loads(p.read_text()) for p in paths], Path(args.out))
+    try:
+        build_report(
+            [json.loads(p.read_text()) for p in paths], Path(args.out), allow_degraded=args.allow_degraded
+        )
+    except ComparisonInvalidError as exc:
+        print(exc, file=sys.stderr)
+        return 2
     print(f"-> {args.out}")
     return 0
 
@@ -121,6 +127,10 @@ def main(argv: list[str] | None = None) -> int:
     r = sub.add_parser("report", help="render markdown + svg from collected files")
     r.add_argument("--inputs", nargs="+", required=True)
     r.add_argument("--out", required=True)
+    r.add_argument(
+        "--allow-degraded", action="store_true",
+        help="include non-full archive days for inspection, keeping COMPARISON_INVALID warnings",
+    )
     r.set_defaults(func=report)
 
     args = parser.parse_args(argv)

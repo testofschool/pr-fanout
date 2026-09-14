@@ -18,7 +18,7 @@ jobs:
       # Pinned: an unpinned linter turns a finished, untouched repository
       # red the day it ships a new rule.
       - run: pip install pytest==8.3.4 ruff==0.16.7
-      - run: ruff check src tests
+      - run: ruff check .
       - run: PYTHONPATH=src python -m pytest -q
 
   reproduce:
