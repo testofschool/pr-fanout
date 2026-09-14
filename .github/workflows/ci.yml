@@ -22,19 +22,38 @@ jobs:
       - run: PYTHONPATH=src python -m pytest -q
 
   reproduce:
-    # Proves the published numbers still come out of the published code.
+    # Re-collects the 2025-09-10 reference day from GH Archive with the SAME
+    # sampling the published dataset used (--every 2 = 12 hours) and asserts an
+    # exact match against data/day-2025-09-10.json.
+    #
+    # It previously ran --every 12. That is a STRIDE, not a count: it collected
+    # 2 hours against the published 12, and asserted only that the archive
+    # returned something. The job was green and proved nothing about the
+    # published numbers. Measured 2026-09-14: the full 12-hour re-collection
+    # takes 66s and matches all 11 summary fields exactly.
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - run: PYTHONPATH=src python -m pr_fanout collect --date 2025-09-10 --every 12 --out /tmp/spot.json
-      - name: spot check
+      - run: PYTHONPATH=src python -m pr_fanout collect --date 2025-09-10 --every 2 --top 30 --out /tmp/repro.json
+      - name: exact match against the published day
         run: |
           PYTHONPATH=src python - <<'PY'
-          import json
-          d = json.load(open("/tmp/spot.json"))
-          assert d["summary"]["human_prs_opened"] > 0, "archive returned nothing"
-          assert d["all_hours_full_schema"], "archive schema changed - regenerate the dataset"
-          print("spot check ok:", d["summary"])
+          import json, sys
+          fresh = json.load(open("/tmp/repro.json"))
+          pub = json.load(open("data/day-2025-09-10.json"))
+          assert fresh["hours_collected"] == pub["hours_collected"], (
+              "hour coverage differs: %s vs %s" % (fresh["hours_collected"], pub["hours_collected"]))
+          assert fresh["all_hours_full_schema"], "archive schema changed - regenerate the dataset"
+          diffs = [(k, fresh["summary"].get(k), v)
+                   for k, v in pub["summary"].items() if fresh["summary"].get(k) != v]
+          if diffs:
+              for k, got, want in diffs:
+                  print("MISMATCH %s: recollected=%r published=%r" % (k, got, want))
+              sys.exit(1)
+          assert fresh["repos_per_actor_histogram"] == pub["repos_per_actor_histogram"], "histogram drift"
+          assert fresh["suppressed_rows"] == pub["suppressed_rows"], "suppression count drift"
+          print("reproduced %d/%d summary fields + histogram + suppression, %d hours"
+                % (len(pub["summary"]), len(pub["summary"]), fresh["hours_collected"]))
           PY
